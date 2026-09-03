@@ -372,3 +372,12 @@
 @media(max-width:520px){.tracking-result dl{grid-template-columns:1fr}}
 .table td>.invoice-button { display: inline-flex; align-items: center; gap: 4px; border-color: #8ab6a1; background: #edf7f1; color: var(--green); font-weight: 800; }
 .table td>.invoice-button svg { width: 11px; }
+.business-footer { max-width: 1148px; margin: 0 auto; border-top: 1px solid var(--line); padding: 28px 0 42px; display: grid; grid-template-columns: 1.2fr 1fr 1fr; gap: 28px; color: var(--muted); }
+.business-footer>div { display: flex; flex-direction: column; align-items: flex-start; gap: 7px; }
+.business-footer .brand { color: var(--ink); }
+.business-footer p,.business-footer span,.business-footer a { margin: 0; color: var(--muted); font-size: 9px; line-height: 1.55; }
+.business-footer b { color: var(--ink); font-size: 9px; text-transform: uppercase; letter-spacing: .08em; }
+.business-footer a { color: #28735a; font-weight: 750; text-decoration: none; }
+.business-footer a:hover { text-decoration: underline; }
+@media(max-width:900px){.business-footer{margin:0 22px}}
+@media(max-width:620px){.business-footer{grid-template-columns:1fr;margin:0 18px}}

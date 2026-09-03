@@ -3,8 +3,8 @@ import "./globals.css";
 import "./live.css";
 
 export const metadata: Metadata = {
-  title: "RoadReady — Vehicle Rental Operations",
-  description: "Customer booking and vehicle-rental operations in one authoritative system.",
+  title: "APC Car Rental — Panabo & Davao City",
+  description: "Check live vehicle availability and request a rental from APC Car Rental in Panabo and Davao City.",
   other: {
     "codex-preview": "development",
   },
