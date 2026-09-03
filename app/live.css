@@ -1,0 +1,12 @@
+.fleet-message {
+  border: 1px solid var(--line);
+  background: #f8faf8;
+  padding: 28px;
+  text-align: center;
+  color: var(--muted);
+  font-size: 11px;
+}
+.fleet-message.error {
+  background: #fff1ef;
+  color: var(--red);
+}
