@@ -148,7 +148,7 @@
 .month-grid { border-top: 1px solid var(--line); border-left: 1px solid var(--line); }
 .month-grid>button, .month-grid>.blank {
   min-width: 0;
-  height: 82px;
+  height: 98px;
   overflow: hidden;
   border: 0;
   border-right: 1px solid var(--line);
@@ -175,6 +175,7 @@
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+.month-grid>button span i b { display: block; margin-bottom: 2px; font-size: 6px; }
 .month-grid>button>small { display: block; margin-top: 3px; color: var(--muted); font-size: 6px; }
 .calendar-legend { display: flex; flex-wrap: wrap; gap: 12px; padding: 12px 3px 2px; }
 .calendar-legend span { display: flex; align-items: center; gap: 5px; color: var(--muted); font-size: 7px; }
