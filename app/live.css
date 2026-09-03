@@ -39,3 +39,76 @@
 .login-card label { display: grid; gap: 7px; font-size: 12px; font-weight: 700; }
 .login-card input { width: 100%; padding: 12px; border: 1px solid var(--line); border-radius: 8px; }
 .login-card .primary, .login-card .secondary { justify-content: center; }
+
+/* Admin action dialog: explicit controls override the compact dashboard styles. */
+.modal {
+  border-radius: 14px;
+  box-shadow: 0 24px 70px rgba(5, 20, 14, .28);
+}
+.modal label {
+  display: grid;
+  gap: 8px;
+  margin-top: 18px;
+  font-size: 11px;
+  line-height: 1.35;
+}
+.modal input,
+.modal select,
+.modal textarea {
+  display: block;
+  width: 100%;
+  min-height: 44px;
+  margin: 0;
+  border: 1px solid #cfd8d2;
+  border-radius: 8px;
+  padding: 11px 13px;
+  background: #fff;
+  color: var(--ink);
+  font-size: 11px;
+}
+.modal textarea { min-height: 90px; resize: vertical; }
+.modal footer {
+  align-items: stretch;
+  gap: 10px;
+  margin-top: 24px;
+}
+.modal footer button {
+  min-width: 118px;
+  min-height: 44px;
+  border-radius: 8px;
+  padding: 11px 16px;
+  font-size: 10px;
+  line-height: 1.2;
+}
+.modal footer .primary {
+  background: var(--green);
+  border-color: var(--green);
+  color: #fff;
+}
+.modal footer .primary:hover { background: #0f3d2e; }
+.modal footer .primary:disabled,
+.modal footer .danger:disabled {
+  opacity: .68;
+  cursor: wait;
+}
+.modal footer .primary:disabled::before,
+.modal footer .danger:disabled::before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  display: inline-block;
+  margin-right: 7px;
+  border: 2px solid currentColor;
+  border-right-color: transparent;
+  border-radius: 50%;
+  vertical-align: -2px;
+  animation: action-spin .7s linear infinite;
+}
+@keyframes action-spin { to { transform: rotate(360deg); } }
+
+@media (max-width: 520px) {
+  .backdrop { padding: 12px; align-items: end; }
+  .modal { padding: 22px 18px; border-radius: 14px 14px 0 0; }
+  .modal footer { display: grid; grid-template-columns: 1fr 1fr; }
+  .modal footer button { min-width: 0; width: 100%; }
+}
