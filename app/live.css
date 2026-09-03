@@ -295,6 +295,19 @@
 @media (max-width: 1050px) {
   .document-queue>article { grid-template-columns: 1fr 120px; }
 }
+
+.pricing-modal { width: min(620px, 100%); }
+.approval-rates { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+.approval-totals { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin-top: 16px; }
+.approval-totals span { border: 1px solid var(--line); border-radius: 8px; padding: 11px; }
+.approval-totals small, .approval-totals b { display: block; }
+.approval-totals small { color: var(--muted); font-size: 7px; text-transform: uppercase; }
+.approval-totals b { margin-top: 4px; font-size: 13px; }
+.pricing-modal label>em { color: var(--red); font-size: 8px; font-style: normal; }
+.pricing-warning { border: 1px solid #ecd7aa; border-radius: 8px; background: #fff8e8; color: #76591e!important; padding: 10px; }
+@media (max-width: 620px) {
+  .approval-rates, .approval-totals { grid-template-columns: 1fr; }
+}
 @media (max-width: 620px) {
   .document-queue>article { grid-template-columns: 1fr; }
 }
