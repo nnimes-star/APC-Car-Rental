@@ -10,3 +10,11 @@
   background: #fff1ef;
   color: var(--red);
 }
+.form-error {
+  border: 1px solid #fecaca;
+  border-radius: 8px;
+  background: #fff1f2;
+  color: var(--red);
+  padding: 12px 14px;
+  font-size: 12px;
+}
